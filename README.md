@@ -1,5 +1,5 @@
 # Improve your workflow by knowing your work pattern
-Monitor what you are doing every 30 seconds and analyse data.
+Monitor what you are doing every minute and analyse data.
 
 # Designed for developers using
 * Mac
