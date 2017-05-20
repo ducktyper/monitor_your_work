@@ -1,11 +1,12 @@
 (function () {
   logHistory = function(url, title) {
-    var time = +new Date();
-    chrome.storage.sync.set({'recordHistory': { time: time, url: url, title: title }}, function () {
-      chrome.storage.sync.get('recordHistory', function (data) {
-        console.log(data);
-      });
-    });
+    var data = new FormData();
+    data.append('url', url);
+    data.append('title', title);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://localhost:3333/chrome', true);
+    xhr.send(data);
   };
 
   chrome.history.onVisited.addListener(function(page) {

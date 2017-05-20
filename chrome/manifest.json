@@ -11,7 +11,6 @@
   },
   "permissions": [
     "history",
-    "storage",
     "tabs"
   ],
   "background": {
