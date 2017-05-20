@@ -1,6 +1,6 @@
 #!/bin/bash
-LOG="/Users/ducksan/projects/monitor_your_work/log/minute.log"
-PROJECT_PATH="/Users/ducksan/projects/hermes"
+LOG="$HOME/projects/monitor_your_work/log/minute.log"
+PROJECT_PATH="$HOME/projects/hermes"
 
 if [ ! -e $LOG ]; then
   touch $LOG

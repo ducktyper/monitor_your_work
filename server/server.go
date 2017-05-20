@@ -14,8 +14,9 @@ func chromeHandleFunc(w http.ResponseWriter, r *http.Request) {
         panic(err)
     }
 
-    f, err := os.OpenFile("/Users/ducksan/projects/monitor_your_work/log/chrome.log", os.O_RDWR | os.O_CREATE | os.O_APPEND, 0666)
+    f, err := os.OpenFile(os.Getenv("HOME") + "/projects/monitor_your_work/log/chrome.log", os.O_RDWR | os.O_CREATE | os.O_APPEND, 0666)
     if err != nil {
+        panic(err)
     }
     defer f.Close()
 
