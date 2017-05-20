@@ -8,7 +8,7 @@
 * Vim
 
 # Minute (Collect data every minute)
-* Install: Add to cron `1 * * * * /path/monitor_your_work/minute/minute.sh`
+* Install: Add to cron `* * * * * /path/monitor_your_work/minute/minute.sh`
 * Data: Branch name, Front app name
 
 # Chrome (Save active url history)
