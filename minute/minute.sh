@@ -1,5 +1,5 @@
 #!/bin/bash
-LOG="collect.log"
+LOG="../log/minute.log"
 PROJECT_PATH="/Users/ducksan/projects/hermes"
 
 if [ ! -e $LOG ]; then
