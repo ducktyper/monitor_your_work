@@ -11,4 +11,4 @@ APP=$(osascript -e 'tell application "System Events" to get name of (processes w
 BRANCH=$(cd $PROJECT_PATH && git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
 TMUX=$(tmux display-message -p '#W')
 
-echo "$TIME,$APP,$BRANCH,$TMUX" >> $LOG
+echo "$TIME $APP $BRANCH $TMUX" >> $LOG
